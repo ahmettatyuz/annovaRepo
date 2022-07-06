@@ -23,5 +23,7 @@
 
     $result = mysqli_query($connection,$query);
 
+    header("Location:index.php");
+
 
 ?>
