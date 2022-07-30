@@ -1,0 +1,9 @@
+<?php 
+    session_start();
+    unset($_SESSION["auth"]);
+    unset($_SESSION["authority"]);
+    unset($_SESSION["username"]);
+    unset($_SESSION["LOGICALREF"]);
+    setcookie("username","",time()-36000);
+    header("Location:index.php");
+?>
